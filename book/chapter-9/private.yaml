@@ -1,0 +1,11 @@
+apiVersion: tekton.dev/v1beta1
+kind: Task
+metadata:
+  name: private
+spec:
+  steps:
+    - image: joellord/private
+      command: 
+        - /bin/sh
+        - -c
+        - echo hello
